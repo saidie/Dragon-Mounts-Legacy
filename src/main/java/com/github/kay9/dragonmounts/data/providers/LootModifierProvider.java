@@ -44,6 +44,6 @@ class LootModifierProvider extends GlobalLootModifierProvider
                 LootItemRandomChanceCondition.randomChance(chance).build()
         };
 
-        super.add(path, new DragonEggLootMod(conditions, breed));
+        super.add(path, new DragonEggLootMod(conditions, breed.id().toString()));
     }
 }
