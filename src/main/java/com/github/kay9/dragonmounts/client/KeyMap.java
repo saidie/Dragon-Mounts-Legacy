@@ -13,6 +13,7 @@ public class KeyMap
     private static final List<KeyMapping> REGISTRY = new ArrayList<>();
 
     public static final KeyMapping FLIGHT_DESCENT = keymap("flight_descent", GLFW.GLFW_KEY_Z, "key.categories.movement");
+    public static final KeyMapping DRAGON_ABILITY = keymap("dragon_ability", GLFW.GLFW_KEY_G, KeyMapping.CATEGORY_MISC);
 
     private static KeyMapping keymap(String name, int defaultMapping, String category)
     {
