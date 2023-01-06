@@ -107,6 +107,7 @@ public class TameableDragon extends TamableAnimal implements Saddleable, FlyingA
     private DragonBreed breed;
     private int reproCount;
     private float ageProgress;
+    public boolean abilityEnabled;
 
     public TameableDragon(EntityType<? extends TameableDragon> type, Level level)
     {

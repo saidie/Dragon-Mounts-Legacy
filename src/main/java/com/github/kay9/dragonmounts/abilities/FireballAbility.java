@@ -7,8 +7,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.LargeFireball;
 import net.minecraft.world.phys.Vec3;
 
-import static com.github.kay9.dragonmounts.client.KeyMap.DRAGON_ABILITY;
-
 public class FireballAbility implements Ability {
 
     private static final int COOLDOWN_PERIOD = 4;
@@ -27,7 +25,7 @@ public class FireballAbility implements Ability {
 
         Player player = (Player) dragon.getControllingPassenger();
 
-        if (DRAGON_ABILITY.isDown()) {
+        if (dragon.abilityEnabled) {
             if (cooldown > 0) {
                 --cooldown;
                 return;

@@ -8,8 +8,6 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.Optional;
 
-import static com.github.kay9.dragonmounts.client.KeyMap.DRAGON_ABILITY;
-
 public class LogBreakerAbility implements Ability {
 
     private static final int COOLDOWN_PERIOD = 6;
@@ -27,7 +25,7 @@ public class LogBreakerAbility implements Ability {
             return;
         }
 
-        if (DRAGON_ABILITY.isDown()) {
+        if (dragon.abilityEnabled) {
             if (cooldown > 0) {
                 --cooldown;
                 return;
