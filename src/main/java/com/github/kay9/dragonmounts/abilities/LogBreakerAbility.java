@@ -35,6 +35,11 @@ public class LogBreakerAbility implements Ability {
                 cooldown = COOLDOWN_PERIOD;
             }
 
+            float health = dragon.getHealth();
+            if (health < 16) {
+                return;
+            }
+
             Optional<BlockPos> target = BlockPos.findClosestMatch(dragon.blockPosition(), SEARCH_RANGE_XZ, SEARCH_RANGE_Y, blockPos -> {
                 BlockState st = dragon.level.getBlockState(blockPos);
                 return st.is(BlockTags.LOGS);
@@ -45,6 +50,7 @@ public class LogBreakerAbility implements Ability {
             }
 
             dragon.level.destroyBlock(target.get(), true);
+            dragon.setHealth(health - 0.3f);
         } else {
             if (cooldown > 0) {
                 --cooldown;
