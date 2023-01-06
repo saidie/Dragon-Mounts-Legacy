@@ -11,8 +11,8 @@ import static com.github.kay9.dragonmounts.client.KeyMap.DRAGON_ABILITY;
 
 public class FireballAbility implements Ability {
 
-    private static final int COOLDOWN_PERIOD = 6;
-    private static final double SPEED_SCALE = 1.5;
+    private static final int COOLDOWN_PERIOD = 4;
+    private static final double SPEED_SCALE = 2;
 
     public static final FireballAbility INSTANCE = new FireballAbility();
     public static final Codec<FireballAbility> CODEC = Codec.unit(INSTANCE);
