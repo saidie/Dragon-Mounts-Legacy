@@ -1,4 +1,9 @@
 {
+  "abilities": [
+    {
+      "type": "night_vision"
+    }
+  ],
   "attributes": {
     "minecraft:generic.flying_speed": 0.76125
   },
