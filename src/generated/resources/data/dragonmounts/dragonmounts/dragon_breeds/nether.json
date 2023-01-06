@@ -1,4 +1,9 @@
 {
+  "abilities": [
+    {
+      "type": "fire_ball"
+    }
+  ],
   "attributes": {
     "minecraft:generic.armor": 8.0
   },

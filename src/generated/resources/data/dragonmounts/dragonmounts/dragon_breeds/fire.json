@@ -1,4 +1,9 @@
 {
+  "abilities": [
+    {
+      "type": "fire_ball"
+    }
+  ],
   "habitats": [
     {
       "type": "nearby_blocks",
