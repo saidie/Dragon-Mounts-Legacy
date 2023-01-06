@@ -16,6 +16,7 @@ public interface Ability
     String GREEN_TOES = register("green_toes", GreenToesAbility.CODEC);
     String SNOW_STEPPER = register("snow_stepper", SnowStepperAbility.CODEC);
     String NIGHT_VISION = register("night_vision", NightVisionAbility.CODEC);
+    String LOG_BREAKER = register("log_breaker", LogBreakerAbility.CODEC);
     String FIRE_BALL = register("fire_ball", FireballAbility.CODEC);
 
     static String register(String name, Codec<? extends Ability> codec)
