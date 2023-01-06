@@ -15,6 +15,7 @@ public interface Ability
     String FROST_WALKER = register("frost_walker", FrostWalkerAbility.CODEC);
     String GREEN_TOES = register("green_toes", GreenToesAbility.CODEC);
     String SNOW_STEPPER = register("snow_stepper", SnowStepperAbility.CODEC);
+    String FIRE_BALL = register("fire_ball", FireballAbility.CODEC);
 
     static String register(String name, Codec<? extends Ability> codec)
     {
